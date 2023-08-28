@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div>
-      {!loggedIn ? (
+      {loggedIn ? (
         <Stack spacing={2} alignItems={'center'}>
           <Button onClick={handleOpen}>Add Task</Button>
           <Modal
