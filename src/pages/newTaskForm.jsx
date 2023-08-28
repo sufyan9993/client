@@ -19,7 +19,6 @@ const NewTaskForm = ({ edit = { isEdit: false }, onAddTask, handleClose }) => {
     handleClose()
   };
   useEffect(() => {
-    console.log(edit.data.completed);
     edit.isEdit && setTaskData({
       title: edit?.data?.title,
       description: edit?.data?.description,

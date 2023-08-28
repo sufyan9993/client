@@ -23,9 +23,7 @@ const HomePage = ({ tasks, fetchTasksData, onEditTask }) => {
             .catch(err => console.log(err.message))
     };
 
-    useEffect(() => {
-        console.log('object');
-        
+    useEffect(() => {      
         fetchTasksData()
     }, [])
     return (
